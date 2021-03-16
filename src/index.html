@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Consent Example</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col my-5 text-center">
+          <button class="btn btn-outline-secondary">Click Me!</button>
+        </div>
+      </div>
+    </div>
+    <!-- Cookie Banner -->
+    <div
+      class="cookie-consent py-2 text-center mb-0 container-fluid"
+      role="alert"
+    >
+      <div class="row">
+        <div class="col-md-10 d-flex flex-column justify-content-center">
+          <p class="mb-0">
+            This site uses cookies to provide you with the best user experience.
+            Find out more about our cookie policy
+            <a href="#" target="_blank">here</a>. By clicking "Accept" you
+            consent to use our cookies.
+          </p>
+        </div>
+        <div class="col-md-2 mt-3 mt-md-0">
+          <button
+            id="cookie-btn"
+            type="button"
+            class="btn btn-sm px-4"
+            onclick="window.nk_hideCookieBanner()"
+          >
+            Accept
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="cookie-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0 py-2">
+            <h5 class="modal-title text-dark font-weight-bold">
+              Cookies acceptance
+            </h5>
+          </div>
+          <div class="modal-body text-dark">
+            <p>To use our website you must consent to use our cookies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/cookie-consent.js"></script>
+  </body>
+</html>
